@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Admin Header Section -->
+  <header>
+    <h1>Admin Dashboard</h1>
+    <button id="add-product-btn">Add New Product</button>
+  </header>
+
+  <!-- Admin Products Section -->
+  <section id="admin-products">
+    <h2>Manage Products</h2>
+    <div id="admin-product-list">
+      <!-- Admin products will be listed here -->
+    </div>
+  </section>
+
+  <!-- Modal for Adding New Product -->
+  <div id="add-product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeAddProductModal()">&times;</span>
+      <h2>Add New Product</h2>
+      <form id="add-product-form">
+        <input type="text" id="product-name" placeholder="Product Name" required>
+        <input type="text" id="product-category" placeholder="Category" required>
+        <input type="number" id="product-price" placeholder="Price" required>
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
